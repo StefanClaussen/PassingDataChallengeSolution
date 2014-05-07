@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "STCDetailViewController.h"
 
-@interface STCViewController : UIViewController <STCDetailViewControllerDelegate>
+@interface STCViewController : UIViewController <STCDetailViewControllerDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 

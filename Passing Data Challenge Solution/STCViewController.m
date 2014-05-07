@@ -15,6 +15,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.textField.delegate = self;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -35,9 +36,18 @@
 }
 
 # pragma mark - STCDetailViewControllerDelegate
+
 - (void)didUpdateText:(NSString *)text
 {
     self.textField.text = text;
+}
+
+# pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
 }
 
 @end
