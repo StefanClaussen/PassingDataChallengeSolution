@@ -23,6 +23,7 @@
         if ([segue.destinationViewController isKindOfClass:[STCDetailViewController class]]) {
             STCDetailViewController *detailVC = segue.destinationViewController;
             detailVC.informationFromTextField = self.textField.text;
+            detailVC.delegate = self;
         }
     }
 }
@@ -31,6 +32,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+# pragma mark - STCDetailViewControllerDelegate
+- (void)didUpdateText:(NSString *)text
+{
+    self.textField.text = text;
 }
 
 @end
