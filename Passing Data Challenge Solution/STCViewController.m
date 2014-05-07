@@ -1,12 +1,9 @@
 //
 //  STCViewController.m
 //  Passing Data Challenge Solution
-//
-//  Created by Stefan Claussen on 08/04/2014.
-//  Copyright (c) 2014 One foot after the other. All rights reserved.
-//
 
 #import "STCViewController.h"
+#import "STCDetailViewController.h"
 
 @interface STCViewController ()
 
@@ -18,6 +15,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UIButton class]]) {
+        if ([segue.destinationViewController isKindOfClass:[STCDetailViewController class]]) {
+            STCDetailViewController *detailVC = segue.destinationViewController;
+            detailVC.informationFromTextField = self.textField.text;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning

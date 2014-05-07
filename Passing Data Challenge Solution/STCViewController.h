@@ -10,4 +10,7 @@
 
 @interface STCViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *textField;
+
+
 @end

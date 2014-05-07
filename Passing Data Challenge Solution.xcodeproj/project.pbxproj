@@ -21,6 +21,7 @@
 		F81F22AC18F4277F00DC59AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81F228E18F4277F00DC59AC /* UIKit.framework */; };
 		F81F22B418F4277F00DC59AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F81F22B218F4277F00DC59AC /* InfoPlist.strings */; };
 		F81F22B618F4277F00DC59AC /* Passing_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F81F22B518F4277F00DC59AC /* Passing_Data_Challenge_SolutionTests.m */; };
+		F81F22C118F4280900DC59AC /* STCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81F22C018F4280900DC59AC /* STCDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		F81F22B118F4277F00DC59AC /* Passing Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Passing Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		F81F22B318F4277F00DC59AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F81F22B518F4277F00DC59AC /* Passing_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		F81F22BF18F4280900DC59AC /* STCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCDetailViewController.h; sourceTree = "<group>"; };
+		F81F22C018F4280900DC59AC /* STCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				F81F229C18F4277F00DC59AC /* Main.storyboard */,
 				F81F229F18F4277F00DC59AC /* STCViewController.h */,
 				F81F22A018F4277F00DC59AC /* STCViewController.m */,
+				F81F22BF18F4280900DC59AC /* STCDetailViewController.h */,
+				F81F22C018F4280900DC59AC /* STCDetailViewController.m */,
 				F81F22A218F4277F00DC59AC /* Images.xcassets */,
 				F81F229118F4277F00DC59AC /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81F22C118F4280900DC59AC /* STCDetailViewController.m in Sources */,
 				F81F229718F4277F00DC59AC /* main.m in Sources */,
 				F81F22A118F4277F00DC59AC /* STCViewController.m in Sources */,
 				F81F229B18F4277F00DC59AC /* STCAppDelegate.m in Sources */,
